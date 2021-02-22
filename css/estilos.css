@@ -1,0 +1,722 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background: url("../img/back_software.jpg") ;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    /* margin: auto; */
+    padding-top: 30px;  
+} 
+
+html{
+    scroll-behavior: smooth;
+}
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+
+
+/* navbar */
+
+.navbar{
+    position: fixed;
+    /* background: #06111e; */
+    background: #030a15;
+    width: 100%;
+    padding: 30px 0;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.3s ease;
+    top: 0;
+}
+.navbar.sticky{
+    padding: 15px 0;
+    background: rgb(6, 1, 49);
+    position: sticky;
+    z-index: 999;
+
+}
+
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.navbar .logo a span{
+    color: #2271b3;
+}   
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3 ease;
+}
+
+.navbar .menu li a:hover{
+    /* color: crimson; */
+    color: #2271b3;
+}
+
+.navbar.sticky .menu li a:hover{
+    color: #2271b3;
+}
+
+/* Boton del menú bars */
+
+.menu-btn{
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+
+.encabezado{
+    /* margin: 200px; */
+    padding-left: 700px;
+    top: 150px;
+    position: relative;
+
+}
+
+
+
+
+/* Sección 1 */
+
+.home{
+    display:flex;
+    /* background: #fff; */
+    background: url("../img/Analista_de_negocios_CV.jpg") no-repeat;
+    height: 100vh;
+    /* color: crimson; */
+    color: #fff;
+    min-height: 300px;
+    font-family: 'Roboto', sans-serif;
+    /* padding: 20px; */
+
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+    padding-top: 30px;
+}
+
+
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content .text-1{
+    font-size: 27px;
+}
+
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.home .home-content .text-3 span{
+    font-size: 50px;
+    color:#fff;
+    font-weight: 500;
+}
+
+
+
+.home .home-content a{
+    display: inline-block;
+    background: #030a15;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-left: 20px;
+    border-radius: 6px;
+    border: 2px solid #030a15;
+    transition: all 0.3s ease;
+}
+
+.home .home-content a:hover{
+    color: #fff;
+    background: none;
+}
+
+
+
+/* Sección 3 */
+/* section{
+    padding: 100px 0;
+    /* background: #fff; */
+
+
+
+.about{
+    display:flex;
+    /* background: darkblue; */
+    background: url("../img/Acerca_de_mi.jpg") no-repeat;
+    height: 150vh;
+    color: #fff;
+    min-height: 800px;
+    font-family: 'Roboto', sans-serif;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+    padding-top: 400px;
+}
+
+.about .max-width{
+    /* margin: auto 0 auto 200px; */
+    padding: 30px;
+    background: rgba(0,0,0,.3);
+    justify-content: center;
+    border-radius: 10px;
+}
+
+   
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+
+.about .about-content .right{
+    width: 100%;
+}
+
+.about .about-content .right .text{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.about .about-content .right .text span{
+    color: #2271b3;
+    font-size: 25px;
+}
+
+.about .about-content .right p{
+    text-align: justify;
+}
+
+.about .about-content .right a{
+    display: flex;
+    width: 250px;
+    flex-wrap: wrap;
+    background: #2271b3;
+    color: #fff;
+    font-size: 25px;
+    padding: 10px 30px;
+    border-radius: 6px;
+    border: 2px solid #2271b3;
+    transition: all 0.3s ease;
+    align-items: center;
+}
+
+.about .about-content .right a:hover{
+    color: #fff;
+    background: none;
+    border: 2px solid #2271b3;
+}
+
+
+
+/* Sección 4 */
+
+.emprendedor{
+    display:flex;
+    background: url("../img/Emprendedor_entusiasta.jpg") no-repeat;
+    height: 100vh;
+    color: #fff;
+    min-height: 300px;
+    font-family: 'Roboto', sans-serif;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+    padding-top: 30px;
+}
+
+/* Sección 5 */
+
+.estrategias{
+    display:flex;
+    background: url("../img/Estrategias.jpg") no-repeat;
+    height: 100vh;
+    color: #fff;
+    min-height: 300px;
+    font-family: 'Roboto', sans-serif;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.analista{
+    display:flex;
+    background: url("../img/Analisis_de_Software.jpg") no-repeat;
+    height: 100vh;
+    color: #fff;
+    min-height: 300px;
+    font-family: 'Roboto', sans-serif;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.ExpLab{
+    display:flex;
+    background: url("../img/Exp_laboral.jpg") ;
+    height: 100vh;
+    color: #fff;
+    min-height: 1600px;
+    font-family: 'Roboto', sans-serif;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+    padding-top: 30px;
+    top: 30px;
+}
+
+.skills{
+    display:flex;
+
+    background: url("../img/skills.jpg") ;
+    height: 100vh;
+    color: #fff;
+    min-height: 1600px;
+    font-family: 'Roboto', sans-serif;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+    padding-top: 30px;
+    top: 30px;
+    align-items: center;
+}
+
+#video{
+    justify-content: center;
+
+}
+
+
+.tm{
+    display:flex;
+    background: url("../img/Exp_laboral.jpg");
+    /* height: 1000vh; */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    /* margin: auto; */
+    /* color: crimson; */
+    color: #fff;
+    min-height: 1400px;
+    font-family: 'Roboto', sans-serif;
+    padding: 50px;
+    top: 600px;
+    align-items: center;
+    /* justify-content: center; */
+
+
+}
+
+.tm .max-width{
+    margin: auto 0 auto 200px;
+}
+
+
+
+/* Linea de tiempo */
+
+.timeline{
+    /* max-width: 1080px; */
+    /* margin: 50px auto;
+    padding: 0 20px; */
+    position: relative;
+}
+
+
+.timeline .center-line{
+    position: absolute;
+    height: 100%;
+    width: 4px;
+    background: #fff;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-50%);
+}
+
+.timeline .row{
+    display: flex   ;
+    justify-content: flex-start;
+}
+
+.timeline .row-1 {
+    justify-content: flex-start;
+}
+
+.timeline .row-2 {
+    justify-content: flex-end;
+}
+
+
+.timeline .row section{
+    background: #fff;
+    border-radius:5px;
+    width: calc(50% - 40px);
+    padding: 20px;
+    position: relative;
+}
+
+.timeline .row section::before{
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: #fff;
+    top: 28px;
+    z-index: -1;
+    transform: rotate(45deg);
+}
+
+.row-1 section::before{
+    right: -7px;
+}
+
+.row-2 section::before{
+    left: -7px;
+}
+
+
+
+
+
+
+.row section .icon,
+.center-line .scroll-icon{
+    position: absolute;
+    background: #030a15;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 17px;
+    box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0,0,0 0.8), 0 3px 0 4px rgba(0,0,0 0.5)
+}
+
+.center-line .scroll-icon{
+    bottom: 0px;
+    left: 50%;
+    font-size: 25px;
+    transform: translateX(-50%);
+}
+
+.row-1 section .icon{
+    top: 13px;
+    right: -60px;
+}
+
+.row-2 section .icon{
+    top: 13px;
+    left: -60px;
+}
+
+.row section .details,
+.row section .buttom
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row section .details .title{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Scroll de la tarjeta de la linea de tiempo  */
+
+.row section .scroll{
+    width: 100%;
+    height: 200px;
+    overflow: auto;
+}
+
+.row section .scroll::-webkit-scrollbar{
+    width: 7PX;
+}
+
+.row section .scroll::-webkit-scrollbar-thumb {
+    background: midnightblue;
+    border-radius: 5px;
+    }
+
+
+.row section .puesto{
+    text-align: left;
+    /* font-size: 17px; */
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    color: #030a15;
+}
+
+.row section .periodo{
+    padding: 10px;
+    text-align: center;
+    background: #030a15;
+    border-radius: 5px;
+    font-size: 15px;
+    /* font-weight: 100; */
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+.row section .periodo span{
+    text-align: right;
+    font-size: 17px;
+    color: #2271b3;
+}
+
+.row section .periodo h3{
+    text-align: left;
+    font-size: 15px;
+}
+
+.row section p{
+    background: rgb(230, 231, 230);
+    padding: 10px;
+    margin: 10px 0 17px 0;
+    font-family: 'Roboto', sans-serif;
+    color: #030a15;
+}
+
+.row section .buttom a{
+    text-decoration: none;
+    background: rgb(240, 8, 8);
+    color:#fff;
+    padding: 7px 15px;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.row section .buttom a:hover{
+
+    background: none;
+    color:rgb(240, 8, 8);
+    border-style: inset;
+
+}
+
+
+
+/* Responsive */
+@media only screen and (max-width:1104px){
+    .home .max-width{
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (max-width:991px){
+    .home .max-width{
+        padding: 0 50px;
+    }
+
+}
+
+@media only screen and (max-width:947px){
+
+
+
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    
+    .menu-btn i.active:before{
+        content: "\f00d"
+    }
+
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top:0;
+        background: rgba(34,34,34,0.8);
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+        z-index: 999;
+    }
+
+    .navbar .menu.active{
+        left: 0;
+    }
+
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+
+    .home .home-content .text-2{
+        font-size: 70px;
+    }
+
+    .home .home-content .text-3{
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width:690px){
+        .max-width{
+            padding: 0 23px;
+        }
+
+        .home .home-content .text-2{
+            font-size: 60px;
+        }
+        .home .home-content .text-3{
+            font-size: 32px;
+        }
+
+        .home .home-content a{
+            font-size: 20px;
+        }
+        
+
+
+        .timeline .center-line{
+            left: -200px;
+            background: #fff;
+
+        }
+
+        .timeline{
+            width: 100%;
+            background: darkmagenta;
+        }
+
+        .timeline .row section{
+            background: rgb(244, 247, 245);
+            border-radius:5px;
+            width: 600px;
+            /* width: calc(50% - 40px); */
+            padding: 20px;
+            position: relative;
+        }
+
+
+        .timeline .row{
+            margin: 30px 0 3px 60px;
+        }
+        
+        /* .timeline .row section{
+            width: 100%;
+        } */
+
+        .row-1 section::before{
+            left: -170px;
+            background: #fff;
+        }
+    
+        .row-1 section .icon{
+            left: -280px;
+        }
+
+        
+        .row-2 section .icon{
+            left: -280px;
+        }
+    
+}
+
+@media only screen and (max-width:360px){
+
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top:0;
+        background: rgba(34,34,34,0.8);
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+        z-index: 999;
+    }
+
+
+
+    .max-width{
+        padding: 0 23px;
+    }
+
+    .timeline .center-line{
+        left: 10px;
+    }
+
+    .timeline .row{
+        margin: 30px 0 3px 60px;
+    }
+    
+    .timeline .row section{
+        width: 100%;
+    }
+
+    .row-1 section::before{
+        left: -7px;
+    }
+
+    .row-1 section .icon{
+        left: -80px;
+    }
+
+}
