@@ -1,0 +1,320 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+body {
+    font-family: "Roboto", sans-serif;
+    min-height: 300vh;
+    align-items: center; 
+    justify-content: center;
+    perspective: 1000px;
+
+}
+
+main .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.card {
+    transform-style: preserve-3d;
+    min-height: 80vh;
+    width: 35rem;
+    border-radius: 30px;
+    padding: 0rem 5rem;
+    background: #fff;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+}
+
+.sneaker {
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sneaker img {
+    width: 20rem;
+    z-index: 2;
+    transition: all 0.75s ease-out;
+}
+
+.circle {
+    width: 20rem;
+    height: 20rem;
+    background: linear-gradient(
+        to right,
+        rgba(245, 70, 66, 0.75),
+        rgba(8, 83, 156, 0.75)
+    );
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.info h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    align-items: center;
+    transition: all 0.75s ease-out;
+}
+
+.info h3 {
+    font-size: 16px;
+    padding: 1rem 0rem;
+    color: crimson;
+    font-weight:bolder;
+    transition: all 0.75s ease-out;
+    text-align: center;
+}
+
+.sizes {
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.75s ease-out;
+    z-index: 999;
+}
+
+.sizes button {
+    padding: 1rem 2rem;
+    background: none;
+    border: none;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #585858;
+}
+
+
+
+.home .home-content a:hover{
+    color: #fff;
+    background: none;
+}
+
+ .purchase a {
+    margin-top: 4rem;
+    display: inline-block;
+    background: #030a15;
+    color: #fff;
+    font-size: 20px;
+    padding: 12px 36px;
+    margin-left: 20px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    transition: all 0.3s ease;
+    width: 100%;
+    text-align: center;
+}
+
+.purchase a:hover {
+    color: #fff;
+    background: #2271b3;
+}
+
+
+.purchase button:hover {
+
+    color: white;
+    border: none;
+    background: #2362e0 ;
+}
+
+/* Iconos */
+
+.wrappper{
+    display: inline-flex;
+}
+
+.wrappper .icon{
+    margin:  0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position:relative;
+    z-index: 2;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.68,-0.55,0.265,1.55) ;
+}
+
+.wrappper .icon span{
+    position:relative;
+    height: 60px;
+    width: 60px;
+    display: block;
+    background: #fff;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.wrappper .icon span i{
+    font-size: 25px;
+    line-height: 60px;
+}
+
+.wrappper .icon:hover span i{
+    color: #fff;
+}
+
+.wrappper .icon .tooltip{
+    position: absolute;
+    top: 0px;
+    background: #fff;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 18px;
+    border-radius: 25px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.68,-0.55,0.265,1.55) ;
+}
+
+.wrappper .icon:hover .tooltip{
+    top: -70px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.wrappper .icon .tooltip:before{
+    position: absolute;
+    content: " ";
+    height: 15px;
+    width: 15px;
+    /* background: #fff; */
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.wrappper .icon:hover span,
+.wrappper .icon:hover .tooltip{
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4) ;
+}
+
+.wrappper .mobile span{
+    background: #132241;
+    color: #fff;
+}
+
+.wrappper .mobile:hover span,
+.wrappper .mobile:hover .tooltip,
+.wrappper .mobile:hover .tooltip:before
+{
+    background: #132241;
+}
+
+.wrappper .telcasa span{
+    background: #111;
+    color: #fff;
+}
+
+.wrappper .telcasa:hover span,
+.wrappper .telcasa:hover .tooltip,
+.wrappper .telcasa:hover .tooltip:before
+{
+    background: #111;
+}
+
+.wrappper .linkedin span{
+    background: #385999;
+    color: #fff;
+}
+
+.wrappper .linkedin span a{
+    background: #385999;
+    color: #fff;
+}
+
+.wrappper .linkedin:hover span,
+.wrappper .linkedin:hover .tooltip,
+.wrappper .linkedin:hover .tooltip:before
+{
+    background: #385999;
+}
+
+.wrappper .mail span{
+    background: #380786;
+    color: #fff;
+}
+
+.wrappper .mail:hover span,
+.wrappper .mail:hover .tooltip,
+.wrappper .mail:hover .tooltip:before
+{
+    background: #380786;
+}
+
+
+/* Acerca de nosotros */
+
+.acerca-de{
+    width: 100%;
+    /* margin-top: 50px; */
+    background: url(../img/Back/BG_Cards15.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding-top: 30px;
+    font-family: 'Rancho', cursive;
+}
+
+.acerca-de .info-container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.acerca-de .info-container h1{
+    font-size: 7vh;
+    font-weight: 400;
+    color:#481380;
+    text-align: center;
+    margin-bottom: 20px;
+    /* font-family: 'Rancho', cursive; */
+}
+
+.acerca-de .info-container p{
+    text-align: center;
+    font-size: 5vh;
+    color:#481380;
+    line-height: 35px;
+    margin: 10px 0px;
+}
+
+.acerca-de .about-gallery{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: Auto;
+
+}
+
+.acerca-de .about-gallery img{
+    width: calc(50% - 20px);
+    /* width: 700px;
+    height: 700px; */
+    object-fit: cover;
+    margin: 10px 10px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+.acerca-de .about-more{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
